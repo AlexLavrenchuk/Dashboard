@@ -105,10 +105,12 @@ a {
   position: relative; }
   .search input {
     height: 90px;
+    width: 100%;
     border: 0;
     font-weight: normal;
     font-size: 14px;
-    color: #9da0a4; }
+    color: #9da0a4;
+    padding-right: 20px; }
     .search input:focus {
       outline: none; }
   .search button {
