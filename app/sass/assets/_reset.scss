@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Raleway';
+    src: url('../../fonts/Raleway-Regular.woff2') format('woff2'),
+        url('../../fonts/Raleway-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 * {
 	box-sizing: border-box;
+	font-family: 'Raleway';
 }
 body,
 html {
