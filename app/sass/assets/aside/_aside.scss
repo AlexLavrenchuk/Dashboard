@@ -1,0 +1,75 @@
+.aside {
+	width: 100px;
+	height: 100%;
+	background: #fff;
+	padding: 40px 0 0 0;
+	border-top: 1px solid rgb(229, 232, 238);
+	box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.06);
+	transition: .5s;
+	z-index: 1;
+	overflow: hidden;
+	&__title {
+		padding: 0 0 0 40px;
+		color: #acb1b9;
+		font-size: 14px;
+		margin-bottom: 16px;
+	}
+	&__lest {
+		padding: 0 5px 0 0;
+	}
+	&__item {
+
+	}
+	&__link {
+		display: block;
+		padding: 15px 34px;
+		border-left: 6px solid transparent;
+		transition: all ease-out .3s;
+		color: transparent;
+		font-size: 16px;
+		white-space: nowrap;
+		&:hover {
+			background: #f2f4f7;
+			border-left: 6px solid #1585ff;
+		}
+		&-Overview {
+			background: url(/img/sprite.png) -9px -45px no-repeat;
+		}
+		&-Analytics {
+			background: url(/img/sprite.png) -31px -74px no-repeat;
+		}
+		&-Your-Profile {
+			background: url(/img/sprite.png) -59px -73px no-repeat;
+		}
+		&-Invoice {
+			background: url(/img/sprite.png) -79px -2px no-repeat;
+		}
+		&-Marketplace {
+			background: url(/img/sprite.png) -6px -75px no-repeat;
+		}
+		&-Projects {
+			background: url(/img/sprite.png) -105px -2px no-repeat;
+		}
+		&-Inbox {
+			background: url(/img/sprite.png) -79px -30px no-repeat;
+		}
+		&-Support {
+			background: url(/img/sprite.png) -43px -44px no-repeat;
+		}
+		span {
+			margin-right: 10px;
+			display: inline-block;
+			width: 18px;
+			height: 18px;
+		}
+	}
+}
+.aside_active {
+	min-width: 290px;
+	a {
+		color: #76797e;
+	}
+	@media (max-width: 992px) {
+		position: absolute;
+	}
+}

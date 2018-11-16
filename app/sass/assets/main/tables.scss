@@ -1,0 +1,32 @@
+// .img-intern {
+// 		width: 36px;
+// 		height: 38px;
+// 		margin-right: 19px;
+// 		background: url(/img/sprite.png) 0px 0px no-repeat;
+// 	}
+
+
+
+.tables-wrap {
+	width: 100%;
+	padding: 40px;
+	background: rgb(255, 255, 255);
+	margin-top: 29px;
+	border-radius: 4px;
+	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.06);
+	.billing {
+		border-bottom: 2px solid rgb(235, 235, 235);
+	}
+}
+.table {
+	padding-top: 27px;
+	table {
+		width: 100%;
+	}
+	td {
+		color: green;
+	}
+	td:first-child {
+		color: red;
+	}
+}

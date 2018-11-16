@@ -1,0 +1,99 @@
+.main {
+	width: 100%;
+}
+.main-header {
+	display: flex;
+	width: 100%;
+	padding: 40px;
+	background: #fff;
+	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
+	margin-bottom: 50px;
+	h1 {
+		font-size: 22px;
+		color: #1d2025;
+		font-weight: 500;
+	}
+	ol {
+		background: transparent;
+		margin-bottom: 0;
+		padding: 5px 0;
+		li,
+		a {
+			font-size: 14px;
+			color: #76797e;
+		}
+	}
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "|"
+}
+.tooltip-wrap {
+	display: flex;
+	align-self: center;
+	height: 38px;
+}
+.tooltip-wrap-income,
+.tooltip-wrap-traffic {
+	display: flex;
+	margin-left: 76px;
+	h6 {
+		font-size: 12px;
+		color: #76797e;
+		text-transform: uppercase;
+	}
+	span {
+		font-weight: 500;
+		font-size: 18px;
+		color: #1585ff;
+		white-space: nowrap;
+		align-self: flex-end;
+	}
+}
+.tooltip-wrap-text {
+	padding: 5px;
+
+}
+.arrow {
+	display: flex;
+}
+.arrow-img {
+	width: 24px;
+	height: 16px;
+	background: url(/img/sprite.png) -100px -22px no-repeat;
+}
+.diagram{
+	@include diagram;
+	.lines_red {
+		@include lines;
+		&:hover {
+			background: red;
+		}
+	}
+	.lines_blue {
+		@include lines;
+		&:hover {
+			background: blue;
+		}
+	}	
+}
+
+.tooltip.colored {
+	.tooltip-inner {
+		background: red;
+	}
+	.arrow {
+		&:before {
+			border-top-color: red;
+		}
+	}
+}
+.tooltip.coloblue {
+	.tooltip-inner {
+		background: blue;
+	}
+	.arrow {
+		&:before {
+			border-top-color: blue;
+		}
+	}
+}

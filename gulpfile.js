@@ -6,7 +6,6 @@ var sourcemaps   = require('gulp-sourcemaps');
 var spritesmith  = require('gulp.spritesmith');
 var merge        = require('merge-stream');
 var cssnano      = require('gulp-cssnano');
-var rename       = require('gulp-rename');
 var sass         = require('gulp-sass');
 sass.compiler    = require('node-sass');
 
@@ -23,9 +22,8 @@ gulp.task('browser-sync', function() {
 
 gulp.task('sass', function() {
 	return gulp.src('app/sass/main.scss')
-	.pipe(sass())
-	.pipe(autoprefixer(['last 15 version', '> 1%', 'ie 8'], {
-		cascade: true }))
+	.pipe(sass().on('error', sass.logError))
+	.pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8'], { cascade: true }))
 	.pipe(gulp.dest('app/css/'))
 	.pipe(browserSync.reload({stream: true}))
 });
@@ -35,6 +33,8 @@ gulp.task('sass', function() {
 gulp.task('scripts', function() {
   return gulp.src([
         'app/js/libs/jquery-3.3.1.min.js',
+        'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+        'app/js/libs/jquery.scrollbar.min.js'
         ])
     .pipe(concat('all.js'))
     .pipe(gulp.dest('app/js/'));
