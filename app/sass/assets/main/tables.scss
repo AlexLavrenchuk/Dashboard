@@ -16,17 +16,52 @@
 	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.06);
 	.billing {
 		border-bottom: 2px solid rgb(235, 235, 235);
+		padding-bottom: 28px;
+		font-size: 14px;
+		color: #999da5;
+		p {
+			display: flex;
+			justify-content: space-between;
+		}
+		.img-flag {
+			width: 30px;
+			height: 16px;
+			margin-right: 19px;
+			background: url(/img/sprite.png) 0px -99px no-repeat;
+		}		
+		span {
+			font-weight: 500;
+			font-size: 14px;
+			color: #1d2025;
+		}		
+		&__card {
+			padding-top: 25px;
+			display: flex;
+			justify-content: space-between;
+		}
+		&__card-person {
+			display: flex;
+			flex-direction: row;
+		}
 	}
+}
+#billing-titel {
+	font-size: 16px;
 }
 .table {
 	padding-top: 27px;
+	overflow: auto;
 	table {
 		width: 100%;
+		min-width: 390px;
+		padding-bottom: 20px;
 	}
 	td {
-		color: green;
+		font-size: 14px;
+		color: #999da5;
 	}
 	td:first-child {
-		color: red;
+		font-weight: 500;
+		color: #1d2025;
 	}
 }
