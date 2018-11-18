@@ -29,15 +29,15 @@
 	}
 	.nav-item {
 		padding: 40px 20px 30px 20px;
-		border-radius: none;
+		border-radius: 0;
 		color: #999da5;
 
 	}
 }
 //tab content
 .tab-content {
-	height: 950px;
     overflow: auto;
+    height: 900px;
 }
 
 .today,

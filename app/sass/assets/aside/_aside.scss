@@ -1,6 +1,5 @@
 .aside {
 	width: 100px;
-	height: 100%;
 	background: #fff;
 	padding: 40px 0 0 0;
 	border-top: 1px solid rgb(229, 232, 238);
@@ -8,6 +7,7 @@
 	transition: .5s;
 	z-index: 1;
 	overflow: hidden;
+	position: relative;
 	&__title {
 		padding: 0 0 0 40px;
 		color: #acb1b9;
@@ -61,15 +61,51 @@
 			display: inline-block;
 			width: 18px;
 			height: 18px;
+		}	
+	}
+	.option {
+		@include button-clear;
+		font-size: 20px;
+		color: #929bab;
+		position: absolute;
+		bottom: 30px;
+		left: calc(50% - 35px);
+		border: 1px solid rgb(238, 240, 244);
+		border-radius: 3px;
+		background-color: rgb(249, 249, 249);
+		padding: 13px 25px;
+		cursor: pointer;
+		transition: transform .3s ;
+		&:hover {
+			color: #1585ff;			
+			transition: .3s;
+			box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+			transform: rotate(360deg);
+			transform: scale(1.1);
+		}
+		&:active {
+			transition: .1s;
+			transform: translateY(2px);
+			box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
 		}
 	}
 }
 .aside_active {
-	min-width: 290px;
+	width: 290px;
 	a {
 		color: #76797e;
 	}
 	@media (max-width: 992px) {
 		position: absolute;
+		height: 100%;
+	}
+}
+.aside.aside_active + .main { 
+	transition: .5s;
+	width: calc(100% - 290px);
+	@media (max-width: 992px) {
+		transition: none;
+		width: calc(100% - 100px);
+		margin-left: 100px;
 	}
 }
