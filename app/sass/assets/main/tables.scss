@@ -1,24 +1,19 @@
-// .img-intern {
-// 		width: 36px;
-// 		height: 38px;
-// 		margin-right: 19px;
-// 		background: url(/img/sprite.png) 0px 0px no-repeat;
-// 	}
-
-
-
 .tables-wrap {
 	width: 100%;
-	padding: 40px;
+	padding: 40px 40px 10px 40px;
 	background: rgb(255, 255, 255);
 	margin-top: 29px;
 	border-radius: 4px;
 	box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.06);
+	@media (max-width: 576px) {
+		padding: 20px 20px 10px 20px;
+	}
 	.billing {
 		border-bottom: 2px solid rgb(235, 235, 235);
 		padding-bottom: 28px;
 		font-size: 14px;
 		color: #999da5;
+		margin-bottom: 27px;
 		p {
 			display: flex;
 			justify-content: space-between;
@@ -33,32 +28,47 @@
 			font-weight: 500;
 			font-size: 14px;
 			color: #1d2025;
+			margin-right: 30px;
 		}		
 		&__card {
 			padding-top: 25px;
 			display: flex;
 			justify-content: space-between;
+			@media (max-width: 576px) {
+				flex-direction: column;
+			}
 		}
 		&__card-person {
 			display: flex;
 			flex-direction: row;
+			@media (max-width: 576px) {
+				padding-bottom: 20px;
+			}
 		}
+	}
+	@media (max-width: 1600px) {
+		width: 50%;
+		margin: 0 0 0 30px;
+	}
+	@media (max-width: 1200px) {
+		width: 100%;
+		margin: 0;
 	}
 }
 #billing-titel {
 	font-size: 16px;
 }
 .table {
-	padding-top: 27px;
 	overflow: auto;
 	table {
 		width: 100%;
 		min-width: 390px;
-		padding-bottom: 20px;
+		// padding-bottom: 20px;
 	}
 	td {
 		font-size: 14px;
 		color: #999da5;
+		padding-bottom: 20px;
 	}
 	td:first-child {
 		font-weight: 500;

@@ -13,12 +13,19 @@
     		cursor: pointer;
     	}
 	}
+	@media (max-width: 1600px) {
+		width: 100%;
+		margin-right: 0;
+	}
 }
 .main-content__tabs {
 	
 	.nav-tabs {
 		padding: 0 40px;
 		border-top: 0;
+		@media (max-width: 576px) {
+			padding: 0 10px;
+		}
 	}
 
 	.active {
@@ -28,10 +35,15 @@
 		height: 100% !important;
 	}
 	.nav-item {
+		font-weight: 500;
+		font-size: 14px;
 		padding: 40px 20px 30px 20px;
 		border-radius: 0;
 		color: #999da5;
-
+		@media (max-width: 768px) {
+			padding: 20px 10px 15px 10px;
+			font-size: 12px;
+		}
 	}
 }
 //tab content
@@ -44,6 +56,9 @@
 .yesterday,
 .february {
 	padding: 30px 30px 30px 40px;
+	@media (max-width: 576px) {
+		padding: 15px 15px 15px 20px;	
+	}
 	h3 {
 		@include title-activity;
 	}

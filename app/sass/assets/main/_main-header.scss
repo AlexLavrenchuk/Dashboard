@@ -6,10 +6,28 @@
 	background: #fff;
 	box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.04);
 	margin-bottom: 50px;
+	@media (max-width: 576px) {
+		margin-bottom: 30px;
+	}
+	.nav-wrap {
+		@media (max-width: 768px) {
+			align-self: center;
+			margin-bottom: 20px;
+		}
+		nav {
+			@media (max-width: 768px) {
+				display: flex;
+    			justify-content: center;
+			}
+		}
+	} 
 	h1 {
 		font-size: 22px;
 		color: #1d2025;
 		font-weight: 500;
+		@media (max-width: 992px) {
+			font-size: 18px;
+		}
 	}
 	ol {
 		background: transparent;
@@ -19,7 +37,16 @@
 		a {
 			font-size: 14px;
 			color: #76797e;
+			@media (max-width: 992px) {
+				font-size: 10px;
+			}
+			@media (max-width: 768px) {
+				align-self: center;
+			}
 		}
+	}
+	@media (max-width: 768px) {
+		flex-direction: column;
 	}
 }
 .breadcrumb-item + .breadcrumb-item::before {
@@ -29,6 +56,15 @@
 	display: flex;
 	align-self: center;
 	height: 38px;
+	@media (max-width: 768px) {
+		width: 100%;
+    	justify-content: space-around;
+	}
+	@media (max-width: 576px) {
+    	flex-direction: column;
+    	height: auto;
+    	align-items: center;
+	}
 }
 .tooltip-wrap-income,
 .tooltip-wrap-traffic {
@@ -45,6 +81,15 @@
 		color: #1585ff;
 		white-space: nowrap;
 		align-self: flex-end;
+	}
+	@media (max-width: 992px) {
+		margin-left: 20px;
+	}
+	@media (max-width: 768px) {
+    	margin-left: 0;
+	}
+	@media (max-width: 576px) {
+    	margin-top: 20px;
 	}
 }
 .tooltip-wrap-text {

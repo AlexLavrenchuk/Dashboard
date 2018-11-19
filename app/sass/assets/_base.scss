@@ -9,10 +9,19 @@
 .main {
 	transition: .5s;
 	width: calc(100% - 100px);
+	@media (max-width: 576px) {
+    	width: 100%;
+	}
 }
 .hero {
 	padding: 0 30px 50px 30px;
 	display: flex;
+	@media (max-width: 1600px) {
+		flex-direction: column-reverse;
+	}
+	@media (max-width: 576px) {
+    	padding: 0px 10px 30px 10px;
+	}
 }
 .wrop-content-all-main {
 	display: flex;

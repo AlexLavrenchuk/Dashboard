@@ -8,11 +8,19 @@
 	z-index: 1;
 	overflow: hidden;
 	position: relative;
+	@media (max-width: 576px) {
+    	position: absolute;
+    	width: 50px;
+	}
 	&__title {
 		padding: 0 0 0 40px;
 		color: #acb1b9;
 		font-size: 14px;
 		margin-bottom: 16px;
+		@media (max-width: 576px) {
+    		font-size: 10px;
+    		padding: 0 0 0 15px;
+		}
 	}
 	&__lest {
 		padding: 0 5px 0 0;
@@ -28,6 +36,9 @@
 		color: transparent;
 		font-size: 16px;
 		white-space: nowrap;
+		@media (max-width: 576px) {
+    		padding: 10px 12px;
+		}
 		&:hover {
 			background: #f2f4f7;
 			border-left: 6px solid #1585ff;
@@ -75,7 +86,10 @@
 		background-color: rgb(249, 249, 249);
 		padding: 13px 25px;
 		cursor: pointer;
-		transition: transform .3s ;
+		transition: transform .3s;
+		@media (max-width: 576px) {
+    		display: none;
+		}
 		&:hover {
 			color: #1585ff;			
 			transition: .3s;
@@ -92,12 +106,22 @@
 }
 .aside_active {
 	width: 290px;
+	z-index: 50;
 	a {
 		color: #76797e;
 	}
 	@media (max-width: 992px) {
 		position: absolute;
 		height: 100%;
+	}
+	@media (max-width: 576px) {
+		width: 200px;
+		height: 500px;
+	}
+	.option {
+		@media (max-width: 576px) {
+    		display: block;
+		}
 	}
 }
 .aside.aside_active + .main { 
@@ -107,5 +131,9 @@
 		transition: none;
 		width: calc(100% - 100px);
 		margin-left: 100px;
+	}
+	@media (max-width: 576px) {
+    	width: 100%;
+    	margin-left: 0;
 	}
 }
