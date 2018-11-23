@@ -47,7 +47,7 @@ gulp.task('sprite', function () {
         .pipe(spritesmith({
             imgName: 'sprite.png',
             cssName: 'sprite.css',
-            imgPath: '../img/sprite.png'
+            imgPath: '/img/sprite.png'
         }));
 
     let imgStream = spriteData.img

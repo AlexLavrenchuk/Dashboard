@@ -129,10 +129,6 @@
 	border-bottom: 2px solid rgb(235, 235, 235);
 	display: flex;
 	justify-content: space-between;
-	// @media (max-width: 425px) {
-	// 	flex-direction: column;
-	// 	padding-left: 40%;
-	// }
 	span {
 		display: flex;
 		flex-direction: column;
@@ -185,16 +181,10 @@
 		display: flex;
 	}
 	.img-designer {
-		width: 36px;
-		height: 38px;
 		margin-right: 19px;
-		background: url(/img/sprite.png) -36px 0px no-repeat;
 	}
-	.img-intern {
-		width: 36px;
-		height: 38px;
+	.img-chat {
 		margin-right: 19px;
-		background: url(/img/sprite.png) 0px 0px no-repeat;
 	}
 	.wrap-text-education {
 		width: 100%;

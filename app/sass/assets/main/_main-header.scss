@@ -98,11 +98,10 @@
 }
 .arrow {
 	display: flex;
-}
-.arrow-img {
-	width: 24px;
-	height: 16px;
-	background: url(/img/sprite.png) -100px -22px no-repeat;
+	align-items: flex-end;
+	span {
+		margin-left: 5px;
+	}
 }
 .diagram{
 	@include diagram;

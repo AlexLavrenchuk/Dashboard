@@ -8,9 +8,14 @@
 	z-index: 1;
 	overflow: hidden;
 	position: relative;
+	@media (max-width: 992px) {
+		position: absolute;
+		height: 100%;
+	}
 	@media (max-width: 576px) {
     	position: absolute;
     	width: 50px;
+    	height: inherit;
 	}
 	&__title {
 		padding: 0 0 0 40px;
@@ -43,35 +48,9 @@
 			background: #f2f4f7;
 			border-left: 6px solid #1585ff;
 		}
-		&-Overview {
-			background: url(/img/sprite.png) -9px -45px no-repeat;
-		}
-		&-Analytics {
-			background: url(/img/sprite.png) -31px -74px no-repeat;
-		}
-		&-Your-Profile {
-			background: url(/img/sprite.png) -59px -73px no-repeat;
-		}
-		&-Invoice {
-			background: url(/img/sprite.png) -79px -2px no-repeat;
-		}
-		&-Marketplace {
-			background: url(/img/sprite.png) -6px -75px no-repeat;
-		}
-		&-Projects {
-			background: url(/img/sprite.png) -105px -2px no-repeat;
-		}
-		&-Inbox {
-			background: url(/img/sprite.png) -79px -30px no-repeat;
-		}
-		&-Support {
-			background: url(/img/sprite.png) -43px -44px no-repeat;
-		}
 		span {
 			margin-right: 10px;
 			display: inline-block;
-			width: 18px;
-			height: 18px;
 		}	
 	}
 	.option {
@@ -109,10 +88,6 @@
 	z-index: 50;
 	a {
 		color: #76797e;
-	}
-	@media (max-width: 992px) {
-		position: absolute;
-		height: 100%;
 	}
 	@media (max-width: 576px) {
 		width: 200px;
