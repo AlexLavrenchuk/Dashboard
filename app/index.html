@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Dashboar</title>
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/components/select2.css">
 		<link rel="stylesheet" href="css/components/sprite.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
@@ -502,14 +503,15 @@
 												    <label for="inputPhone">Address</label>
 												    <input type="text" class="form__input" id="inputPhone" placeholder="(+964) 431 745 542">
 												  </div>
-												  <div class="form__column">
+												  <div class="form__column selectArrow">
 											      <label for="inputCountry">Select Country</label>
-											      <select id="inputCountry" class="form__input">
+											      <select id="inputCountry" class="js-example-basic-single mySelect">
 											        <option selected="selected">London</option>
-											        <option>London1</option>
-											        <option>London2</option>
-											        <option>London3</option>
+											        <option>Paris</option>
+											        <option>Milan</option>
+											        <option>Amsterdam</option>
 											      </select>
+											      <i class="fas fa-angle-down"></i>
 											    </div>
 											  </div>
 											  <div class="form__line">

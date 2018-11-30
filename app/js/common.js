@@ -18,4 +18,10 @@ $( document ).ready(function() {
 	  });
 	})
 
+	//select2
+
+	$('.js-example-basic-single').select2({
+		theme: ' my-select-theme',
+	});
+
 })//end document.ready function
