@@ -2394,7 +2394,7 @@ a {
     margin-right: 30px;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    background: url(/img/any-picture.png) 100% 100%/cover no-repeat; }
+    background: url(../img/any-picture.png) 100% 100%/cover no-repeat; }
     @media (max-width: 576px) {
       .messages__avatar {
         width: 30px;
